@@ -13,6 +13,37 @@
     </header>
     
     <div class="container">
+        <!-- Section de filtrage -->
+        <div class="filter-section" id="filter-container">
+            <h2>Filtrer les restaurants</h2>
+            <div class="filter-controls">
+                <div class="filter-group">
+                    <label for="cuisine-filter">Type de cuisine</label>
+                    <select id="cuisine-filter">
+                        <option value="all">Toutes les cuisines</option>
+                        <!-- Les options seront ajoutées dynamiquement via JavaScript -->
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="rating-filter">Note minimale</label>
+                    <select id="rating-filter">
+                        <option value="all">Toutes les notes</option>
+                        <option value="4.5">4.5 étoiles et plus</option>
+                        <option value="4">4 étoiles et plus</option>
+                        <option value="3.5">3.5 étoiles et plus</option>
+                        <option value="3">3 étoiles et plus</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="search-input">Recherche par mot-clé</label>
+                    <input type="text" id="search-input" placeholder="Rechercher un restaurant...">
+                </div>
+                <div class="filter-buttons">
+                    <button id="reset-filter" class="filter-button reset">Réinitialiser</button>
+                </div>
+            </div>
+        </div>
+        
         <div class="restaurants-grid">
             <!-- Restaurant 1 -->
             <div class="restaurant-card">
@@ -290,5 +321,8 @@
         <p>Les 10 Meilleurs Restaurants d'Albi selon Google Maps</p>
         <p class="watermark">Créé le 18 mars 2025</p>
     </footer>
+    
+    <!-- Lien vers le script JavaScript -->
+    <script src="js/filter.js"></script>
 </body>
 </html>
