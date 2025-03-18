@@ -17,6 +17,8 @@ Pour chaque restaurant, nous utiliserons une image représentative de qualité.
 9. `pizza-gusto.jpg` - Pizzeria Pizza Gusto
 10. `bip-bip.jpg` - Pizzeria Bip-Bip
 11. `bibinutile.jpg` - La Bibinutile (Bistrot du marché)
+12. `saveurs-asie.jpg` - Saveurs d'Asie (Restaurant asiatique)
+13. `mykonos.jpg` - Mykonos (Restaurant grec)
 
 ## Recommandations pour les images
 
