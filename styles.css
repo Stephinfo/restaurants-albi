@@ -1,0 +1,168 @@
+:root {
+    --primary-color: #a83232;
+    --secondary-color: #e2c2a9;
+    --text-color: #333;
+    --light-bg: #f8f5f2;
+    --card-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+body {
+    font-family: 'Playfair Display', Georgia, serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--light-bg);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/albi-header.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    position: relative;
+}
+
+h1 {
+    font-size: 3rem;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.intro {
+    max-width: 800px;
+    margin: 20px auto;
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.restaurants-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.restaurant-card {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: var(--card-shadow);
+    transition: transform 0.3s ease;
+}
+
+.restaurant-card:hover {
+    transform: translateY(-10px);
+}
+
+.restaurant-image {
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+}
+
+.restaurant-content {
+    padding: 25px;
+}
+
+.restaurant-title {
+    font-size: 1.8rem;
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: var(--primary-color);
+}
+
+.restaurant-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    font-size: 0.9rem;
+}
+
+.restaurant-rating {
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+}
+
+.restaurant-rating .stars {
+    color: #ffc107;
+    margin-right: 5px;
+}
+
+.restaurant-cuisine {
+    background-color: var(--secondary-color);
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+}
+
+.restaurant-description {
+    margin-bottom: 20px;
+    font-size: 0.95rem;
+}
+
+.reviews-title {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid var(--secondary-color);
+}
+
+.review {
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px dashed #eee;
+}
+
+.review:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+.review-author {
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.review-text {
+    font-size: 0.9rem;
+    font-style: italic;
+    color: #555;
+    margin-top: 5px;
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.watermark {
+    opacity: 0.8;
+    font-size: 0.8rem;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .restaurants-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    h1 {
+        font-size: 2.2rem;
+    }
+    
+    .intro {
+        font-size: 1rem;
+    }
+}
